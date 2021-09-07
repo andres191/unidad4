@@ -1,0 +1,439 @@
+*{
+    padding: 0px;
+  margin:0px;
+}
+p{
+  font-family: cursive;
+  font-size: 15px;
+}
+html{
+  overflow-y: scroll; overflow-x:hidden;
+    background: #FDFEFE;
+
+}
+/*****************************//*****************************//*****************************//*****************************/
+.sub-menu-parent { position: relative; 
+}
+
+.sub-menu { 
+  visibility: hidden; /* hides sub-menu */
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+/* presentational */
+body { padding: 2%; font: 18px/1.4 sans-serif; }
+
+nav a { color:black; display: block; padding: 0.5em 1em; text-decoration: none; }
+nav a:hover { color: blue; }
+nav ul,
+nav ul li { list-style-type: none; padding: 0; margin: 0; }
+
+nav > ul { background:  #30A6E6; text-align: center; }
+nav > ul > li { display: inline-block; border-left: solid 1px #aaa; }
+nav > ul > li:first-child { border-left: none; }
+
+.sub-menu {
+  background: #aaa;
+}
+/*****************************//*****************************//*****************************//*****************************/
+
+#fondo{
+    width: auto;
+    height: 500px;
+    top: 15px;
+    background-image: url("../img/fondo1.jpg");
+    background-size: cover;
+}
+
+#fondo #l1{
+  position: relative;
+  top: 100px; 
+ 
+  text-align: center;
+}
+
+#fondo #l1 #titulo1{
+  font-size: 50px;
+color: honeydew;
+}
+
+#fondo #l1 #par1{
+  color: honeydew ;
+}
+
+#fondo #l1 #boton1{
+  text-decoration: none;
+  color: honeydew;
+  padding: 10px;
+  position: relative;
+  top: 50px;
+  border: 2px solid honeydew;
+}
+/*****************************//*****************************//*****************************//*****************************/
+#bqa{
+    width: 100%;
+    display: block;
+    color: #333333;
+    position: relative;
+    top: 20px;
+    left: 50px;
+    bottom: 20px;
+}
+
+#bqa #titulo2{
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  position: relative;
+  top: 20px;
+}
+
+#tite{
+  margin-top: 20px;
+  font-size: 60px;
+
+}
+/*****************************//*****************************//*****************************//*****************************/
+
+.articulo-uno{
+  width: auto;
+  height: 600px;
+  margin-top: 20px;
+  display: inline-flex;
+}
+
+.articulo-uno .caja1{
+
+  width: 400px;
+  height: 500px;
+  background-color:#FFFFFF;  
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  top: 40px;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.articulo-uno .caja1 #ft-uno{
+    background-image: url(../img/conductor.jpg);
+    width: 400px; 
+    height: 50%;
+    background-size: cover;
+}
+
+.articulo-uno .caja1 .ct-uno{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.articulo-uno .caja2{
+  width: 400px;
+  height: 500px;
+  background-color:#FFFFFF;  
+  display: inline-block;
+ margin-left: -20px;
+  margin-top: 40px;
+ 
+}
+
+.articulo-uno .caja2 #ft-dos{
+  background-image: url(../img/comida1.PNG);
+  width: 400px; 
+  height: 50%;
+  background-size: cover;
+}
+
+.articulo-uno .caja2 .ct-uno{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.articulo-uno .caja3{
+  width: 400px;
+  height: 500px;
+  background-color:#FFFFFF;  
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  bottom: -40px;
+}
+
+.articulo-uno .caja3 #ft-tres{
+ background-image: url(../img/ubicacion.jpg);
+  width: 400px; 
+  height: 50%;
+  background-size: cover;
+  
+ 
+}
+
+.articulo-uno .caja3 .ct-uno{
+  text-align: center;
+  margin-top: 15px;
+}
+
+/*****************************//*****************************//*****************************//*****************************/
+
+.sect1{
+  width: 1300px;
+  height: 500px;
+  display: inline-block;
+  background: #FFFFFF;
+  margin-top: 20px;
+}
+
+.sect1 .box1{
+width: 400px;
+height: 400px;
+position: relative;
+left: 40px;
+top: 40px;
+background-image: url(../img/celular.jpg);
+background-size: cover;
+
+}
+
+.texto1{
+  width: 400px;
+  height: auto;
+  position: relative;
+  left: 500px;
+ top: -261px;
+ text-align: center;
+}
+
+#bt2{
+  position: relative;
+  top: 15px;
+}
+
+/*****************************//*****************************//*****************************//*****************************/
+
+.sect2{
+  width: 1300px;
+  height: 500px;
+  display: inline-block;
+  background: #FFFFFF;
+}
+
+.sect2 .box2{
+width: 400px;
+height: 400px;
+position: relative;
+left: 40px;
+top: 40px;
+background-image: url(../img/seguridad.jpg);
+background-size: cover;
+
+}
+
+.texto2{
+  width: 400px;
+  height: auto;
+  position: relative;
+  left: 500px;
+ top: -261px;
+ text-align: center;
+}
+
+#bt2{
+  position: relative;
+  top: 15px;
+}
+/*****************************//*****************************//*****************************//*****************************/
+
+.sect3{
+  width: 1300px;
+  height: 500px;
+  display: inline-block;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.sect3 .box3{
+width: 400px;
+height: 400px;
+position: relative;
+left: 40px;
+top: 40px;
+background-image: url(../img/ahorro.jpg);
+background-size: cover;
+
+}
+
+.texto3{
+  width: 400px;
+  height: auto;
+  position: relative;
+  left: 500px;
+ top: -261px;
+ text-align: center;
+}
+
+#bt2{
+  position: relative;
+  top: 15px;
+}
+/*****************************//*****************************//*****************************//*****************************/
+
+.sect4{
+  width: 1300px;
+  height: 600px;
+  display: inline-block;
+  background: #E5E7E9;
+ 
+  position: relative;
+  top: -50px;
+}
+
+.sect4 .titulo3{
+  width: 1000px;
+  height: auto;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  bottom: 40px;
+  background: white;
+}
+
+.sect4 .titulo3 #h22{
+  font-size: 25px;
+}
+
+/*****************************//*****************************//*****************************//*****************************/
+
+.sect4 .cajon1{
+  width: 400px;
+  height: 450px;
+  position: relative;
+  left: 20px;
+  top: 30px;
+  display: inline-block;
+ background: white;
+}
+
+.sect4 .cajon1 .zoom{
+  width: 400px;
+  height: 285px;
+  background-image: url(../img/meet.jpg);
+  background-size: cover;
+}
+
+ .texto-zoom{
+  width: 400px;
+  height: auto;
+  position: relative;
+  top: 20px;
+  background: white;
+  text-align: center;
+}
+
+/*****************************//*****************************//*****************************//*****************************/
+  .sect4 .cajon2{
+    width: 400px;
+    height: 450px;
+    position: relative;
+    left: 20px;
+    top: 30px;
+    display: inline-block;
+   background: white;
+  }
+  
+  .sect4 .cajon2 .pepsie{
+    width: 400px;
+    height: 285px;
+    background-image: url(../img/pepsi.png);
+    background-size: cover;
+  }
+  
+   .texto-pepsies{
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 25px;
+    background: white;
+    text-align: center;
+  }
+/*****************************//*****************************//*****************************//*****************************/
+  
+  .sect4 .cajon3{
+    width: 400px;
+    height: 450px;
+    position: relative;
+    left: 20px;
+    top: 9px;
+    display: inline-block;
+   background: white;
+  }
+  
+  .sect4 .cajon3 .pepsie1{
+    width: 400px;
+    height: 285px;
+    background-image: url(../img/iphone1.PNG);
+    background-size: cover;
+    text-align: center;
+  }
+  
+   .texto-pepsies1{
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 25px;
+    background: white;
+    text-align: center;
+  }
+    /*****************************//*****************************//*****************************//*****************************/
+
+  footer{
+    width: auto;
+    height: auto;
+    background: black;
+  }
+
+  .h44{
+    color: white;
+  }
+
+  .bb{
+    width: 400px;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    left: 40px;
+    
+  }
+
+  #hola{
+    width: 400px;
+    height: auto;
+position: relative; 
+left: 40px; }
+
+#mm{
+  color: #FFFFFF;
+  position: relative;
+  left: 40px;
+}
+
+.aa{
+  text-decoration: none;
+  color: #FDFEFE;
+}
+    /*****************************//*****************************//*****************************//*****************************/
